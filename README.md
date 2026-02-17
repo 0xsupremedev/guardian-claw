@@ -1,8 +1,30 @@
 # GuardianClaw
 
-### AI-Powered Non-Custodial Transaction Firewall for BNB Chain
+## The Next-Generation AI-Driven Security Standard for the BNB Ecosystem
 
-GuardianClaw is a next-generation security protocol designed to protect DeFi users from honeypots, rug pulls, and malicious signature drains. By combining real-time AI agents with on-chain policy enforcement, GuardianClaw acts as an autonomous bodyguard for your wallet, blocking threats before funds ever leave your control.
+GuardianClaw is not just a wallet or a scanner—it is a comprehensive, **AI-Powered Non-Custodial Transaction Firewall** purpose-built to eliminate the threat of malicious actors on the BNB Smart Chain and opBNB. By sandwiching a user's intent between an autonomous off-chain intelligence layer and a rigid on-chain enforcement kernel, GuardianClaw ensures that retail users can navigate the DeFi "dark forest" with institutional-grade protection.
+
+---
+
+### Key Pillars of the GuardianClaw Infrastructure
+
+#### 1. AI-Powered Forensic Intelligence
+GuardianClaw leverages the **OpenClaw Agentic Framework** to provide real-time, proactive risk assessment. Every transaction intent is intercepted and analyzed by an autonomous AI agent that performs:
+- **Modular Bytecode Scanning**: Decomposes contract runtime bytecode to identify "malicious primitives" such as hidden mint functions, proxy upgrade traps, or custom transfer logic designed to create honeypots.
+- **Predictive EVM Simulation**: Executes a deterministic "dry-run" in a sandboxed environment to monitor state changes. If the simulation results in a "blocked sell" or a "stealth drain," the firewall instantly triggers a hard-revert long before the user's funds are exposed.
+- **Liquidity Health Analysis**: Continuously queries DEX factory contracts (PancakeSwap, Uniswap) to verify swap-depth, slippage-to-value ratios, and LP token lock status.
+
+#### 2. Non-Custodial Architecture & User Sovereignty
+Security at the cost of freedom is a failed model. GuardianClaw operates on a **Non-Custodial, Multi-Layered Consent** basis:
+- **EIP-712 Intent Flow**: Users authorize specific "Typed Intents" rather than blind hex data. You approve exactly what you see: the target contract, the value, and the expected outcome.
+- **Ephemeral Session Keys**: For high-frequency interactions, GuardianClaw utilizes limited-scope session keys that are time-bound and permission-locked, ensuring the AI agent can only execute what you have explicitly allowed.
+- **Zero-Trust Infrastructure**: The AI agent acts as a guard, but your private keys never leave your device. The system provides protection without ever requiring "Master Custody" over your assets.
+
+#### 3. On-Chain Transaction Firewall & Policy Enforcement
+While scanners only warn, GuardianClaw **enforces**. The **PolicyGuard Kernel** is a smart contract residing on-chain that serves as the final arbiter of every transaction:
+- **Hard-Coded Constraints**: Users define their own "Security Constitution," including daily spending limits, counterparty whitelists, and risk score thresholds that the contract will strictly honor.
+- **Synchronized Global Blocklist**: Once a malicious contract is identified by any AI agent in the network, that address is added to a global blocklist, providing "herd immunity" to the entire GuardianClaw ecosystem within seconds.
+- **AuditNFT Protocol**: Every protective action, whether a blocked honeypot or a safe verification, is recorded as an immutable **AuditNFT** on opBNB. This provides a verifiable, cryptographic proof-of-action for every security intervention.
 
 ---
 
@@ -39,7 +61,7 @@ Our AI agent constantly monitors proposed transaction intents. When a user prepa
 - **Ownership Risk Assessment**: Analyzes the creator wallet and contract owner for suspicious history.
 - **Simulation**: Runs a "dry-run" of the transaction in a sandboxed environment to see if it results in a "blocked sell" or other trap.
 
-#### #### 2. The PolicyGuard Smart Contract (On-Chain)
+#### 2. The PolicyGuard Smart Contract (On-Chain)
 This acts as the "Mandate" for your wallet. It enforces user-defined rules that cannot be bypassed, even if the user accidentally signs a malicious transaction:
 - **Daily Spending Limits**: Prevents the total drainage of a wallet in a single day.
 - **Real-Time Blocklist**: Automatically syncs with the AI agent's findings to block known malicious addresses globally.
