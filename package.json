@@ -1,0 +1,33 @@
+{
+    "name": "guardianclaw",
+    "version": "1.0.0",
+    "description": "GuardianClaw — AI-Powered Non-Custodial Transaction Firewall for BNB Chain",
+    "license": "MIT",
+    "scripts": {
+        "compile": "npx hardhat compile",
+        "test": "npx hardhat test",
+        "deploy:bsc-testnet": "npx hardhat run scripts/deploy.js --network bscTestnet",
+        "deploy:opbnb-testnet": "npx hardhat run scripts/deploy.js --network opbnbTestnet",
+        "deploy:local": "npx hardhat run scripts/deploy.js --network localhost",
+        "node": "npx hardhat node",
+        "demo": "npx hardhat run scripts/demo.js --network localhost"
+    },
+    "devDependencies": {
+        "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+        "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+        "@nomicfoundation/hardhat-ethers": "^3.0.0",
+        "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+        "@nomicfoundation/hardhat-verify": "^2.0.0",
+        "@typechain/ethers-v6": "^0.5.0",
+        "@typechain/hardhat": "^9.0.0",
+        "chai": "^4.3.0",
+        "ethers": "^6.9.0",
+        "hardhat": "^2.22.0",
+        "hardhat-gas-reporter": "^1.0.0",
+        "solidity-coverage": "^0.8.0",
+        "typechain": "^8.3.0"
+    },
+    "dependencies": {
+        "dotenv": "^16.3.0"
+    }
+}
